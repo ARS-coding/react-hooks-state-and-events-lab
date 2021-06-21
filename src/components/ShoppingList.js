@@ -32,11 +32,11 @@ function ShoppingList({ items }) {
   return (
     <div className="ShoppingList">
       <div className="Filter">
-        <select name="filter">
-          <option value="All" onClick={filterItems}>Filter by category</option>
-          <option value="Produce" onClick={filterItems}>Produce</option>
-          <option value="Dairy" onClick={filterItems}>Dairy</option>
-          <option value="Dessert" onClick={filterItems}>Dessert</option>
+        <select name="filter" onChange={filterItems}>
+          <option value="All">Filter by category</option>
+          <option value="Produce">Produce</option>
+          <option value="Dairy">Dairy</option>
+          <option value="Dessert">Dessert</option>
         </select>
       </div>
       <ul className="Items">
