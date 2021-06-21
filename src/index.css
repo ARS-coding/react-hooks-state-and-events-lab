@@ -99,10 +99,12 @@ header button {
 
 .Items li.in-cart {
   background: var(--background--light);
+  transition: all 0.3s;
 }
 
 .Items li.in-cart span {
   text-decoration: line-through;
+  transition: all 0.3s;
 }
 
 .Items button.add {
