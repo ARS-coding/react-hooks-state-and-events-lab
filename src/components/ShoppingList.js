@@ -15,9 +15,6 @@ function ShoppingList({ items }) {
 
   function filterItems(event) { // click handler for options
     switch (event.target.value) {
-      case "All":
-        setListedItems(elementsToDisplay())
-        break;
       case "Produce":
         setListedItems(elementsToDisplay(items.filter((itemObj) => itemObj.category === "Produce")));
         break;
@@ -27,6 +24,8 @@ function ShoppingList({ items }) {
       case "Dessert":
         setListedItems(elementsToDisplay(items.filter((itemObj) => itemObj.category === "Dessert")));
         break;
+      default:
+        setListedItems(elementsToDisplay())
     }
   }
   
